@@ -14,19 +14,65 @@
 <body>
   <!-- <script src="https://app-stage.geckoform.com/gecko-embed/form.js?uuid=2vFO007trhfl9k006pykhofefz" id="gecko-form-embed-script"></script> -->
   <style>
-    /* body {
-      background-color: linen;
-    } */
-    
+    /* Base styles */
+    body {
+      font-family: "Georgia", serif;
+      background: linear-gradient(135deg, #f8f1f4, #e0eafc);
+      color: #2c2c54;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
     h1 {
-      color: rgb(128, 0, 64);
-      margin-left: 40px;
+      color: #800040;
+      margin-top: 60px;
+      letter-spacing: 2px;
+      font-size: 2.5rem;
+      text-align: center;
     }
-    p {
+
+    .poem {
+      max-width: 600px;
+      text-align: center;
+      margin-top: 30px;
+      line-height: 1.7;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .poem p {
+      margin-bottom: 1.5em;
       color: darkslateblue;
-      margin-left: 45px;
     }
-    </style>
+
+    .links {
+      margin-top: 40px;
+    }
+
+    a {
+      color: #800040;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #b30059;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="poem">
+
     <h1>Steffers</h1>
     <p>Do not go gentle into that good night,
       Old age should burn and rave at close of day;
@@ -53,7 +99,9 @@
       Do not go gentle into that good night.
       Rage, rage against the dying of the light.
       </p>
-    <a href="/Steffers/index.html">Click here to go back</a>
-    </p>
-    <a href="/Steffers/anotherPage.html">Click here for anotherPage</a>
+     <div class="links">
+    <a href="/Steffers/index.html">Back to Home</a>
+    <a href="/Steffers/anotherPage.html">Another Page</a>
+  </div>
+</body>
 </html>
